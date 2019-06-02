@@ -1,39 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#f00"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content">
 
-
-    <TextView
-        android:id="@+id/tvSaludo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_centerHorizontal="true"
-        />
-
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_alignRight="@+id/tvSaludo"
-        android:layout_below="@+id/tvSaludo"/>
-
-    <LinearLayout
-        android:id="@+id/llMain"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0f0"
-        android:layout_below="@id/button"
-        android:orientation="horizontal">
+        android:background="#f00"
+        tools:context=".MainActivity">
+
 
         <TextView
+            android:id="@+id/tvSaludo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello World!"
@@ -42,104 +22,146 @@
 
 
         <Button
-            android:layout_width="wrap_content"
-            android:text="Button"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/tvSaludo"
-            android:layout_below="@+id/tvSaludo"/>
-
-        <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button"
             android:layout_alignRight="@+id/tvSaludo"
             android:layout_below="@+id/tvSaludo"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            android:layout_alignRight="@+id/tvSaludo"
-            android:layout_below="@+id/tvSaludo"/>
-
-
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/flMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00f"
-        android:layout_below="@+id/llMain">
-
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="bottom|right"
-        android:textColor="#fff"
-        />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:text="Button"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/tvSaludo"
-            android:layout_below="@+id/tvSaludo"
-            android:layout_gravity="center_horizontal"/>
-
-
-
-    </FrameLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#fff"
-        android:layout_below="@+id/flMain">
-
-        <TextView
+        <LinearLayout
+            android:id="@+id/llMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_blue_dark"
-            android:text="texto de prueba"
-            android:textAllCaps="true"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:gravity="center_horizontal"
-            />
+            android:background="#0f0"
+            android:layout_below="@id/button"
+            android:orientation="horizontal">
 
-        <EditText
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Button"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tvSaludo"
+                android:layout_below="@+id/tvSaludo"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:layout_alignRight="@+id/tvSaludo"
+                android:layout_below="@+id/tvSaludo"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:layout_alignRight="@+id/tvSaludo"
+                android:layout_below="@+id/tvSaludo"/>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="introduce tu nombre"/>
+            android:background="#00f"
+            android:layout_below="@+id/llMain">
 
-        <Button
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom|right"
+                android:textColor="#fff"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Button"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tvSaludo"
+                android:layout_below="@+id/tvSaludo"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Guardar"
-            android:textAllCaps="false" />
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            />
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Estado: "/>
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_below="@+id/flMain"
+            android:gravity="center">
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Acepta términos y condiciones"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="texto de prueba"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center_horizontal"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="introduce tu nombre"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:textAllCaps="false" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado: "/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acepta términos y condiciones"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="true"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/ic_launcher"/>
 
 
-    </LinearLayout>
+        </LinearLayout>
 
 
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
