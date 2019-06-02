@@ -116,7 +116,30 @@
             android:layout_height="wrap_content"
             android:hint="introduce tu nombre"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:textAllCaps="false" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado: "/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acepta términos y condiciones"/>
+
+
     </LinearLayout>
+
 
 
 </RelativeLayout>
