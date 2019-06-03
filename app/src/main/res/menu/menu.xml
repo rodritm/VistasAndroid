@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/androidLogo_button"
+        android:title="Android"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_bike2"
+        android:title="Servicios"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_compartir"
+        android:title="Compartir"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="never" />
+
+</menu>
